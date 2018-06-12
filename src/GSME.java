@@ -1,5 +1,6 @@
 import java.awt.*;
 import javax.swing.*;
+
 public class GSME extends JFrame{
 	int x=50;
 	int y=50;
