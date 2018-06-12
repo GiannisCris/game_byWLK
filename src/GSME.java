@@ -27,16 +27,16 @@ public class GSME extends JFrame{
 	setSize(405,250);
 	setLocation(150,150);
 	setVisible(true);
-	
 
-	while(true) {
-		repaint();
-		try {
-			Thread.sleep(40);
-		}catch(Exception e) {
-			e.printStackTrace();
-		}
-	}
+
+		do {
+			repaint();
+			try {
+				Thread.sleep(40);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		} while (true);
 	}	
 	
 	public static void main(String[] args) {
