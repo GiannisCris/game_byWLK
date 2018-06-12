@@ -2,16 +2,17 @@ import java.awt.*;
 import javax.swing.*;
 
 public class GSME extends JFrame{
-	int x=50;
-	int y=50;
-	boolean right=true;
-	Image ball=Toolkit.getDefaultToolkit().getImage("pic/2.png");
-	Image desk=Toolkit.getDefaultToolkit().getImage("pic/1.png");
+	private int x=50;
+	private boolean right=true;
+	private Image ball=Toolkit.getDefaultToolkit().getImage("pic/2.png");
+	private Image desk=Toolkit.getDefaultToolkit().getImage("pic/1.png");
 
 	public void paint(Graphics g) {
 		System.out.println("������һ��");
 		g.drawImage(desk,10,20,null);
-		g.drawImage(ball,x,y,null);
+		int y;
+		y = 50;
+		g.drawImage(ball,x, y,null);
 		if(right)
 		{x=x+2;}else
 		{x=x-2;}
@@ -22,7 +23,7 @@ public class GSME extends JFrame{
 			
 	}
 
-	void launchFrame() {
+	private void launchFrame() {
 	setSize(405,250);
 	setLocation(150,150);
 	setVisible(true);
